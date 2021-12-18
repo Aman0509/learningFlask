@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Username Checker</h1>
+            <p class="lead">Let's see if your username is secure</p>
+            <hr class="my-4">
+            <p>Username should follow below requirements to be compliant</p>
+            <ul>
+                <li>Username must contain a lowercase letter</li>
+                <li>Username must contain an uppercase letter</li>
+                <li>Username must end in a number</li>
+            </ul>
+            <form action="{{ url_for('report') }}">
+                <input type="text" class="form-control" name="username">
+                <br>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+          </div>
+    </div>
+</div>
+{% endblock content %}

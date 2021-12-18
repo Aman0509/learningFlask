@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask - Templates</title>
+</head>
+<body>
+    <h1>Below are rendered using Jinja2</h1>
+    <p>{{var1}}</p>
+    <p>{{var2}}</p>
+    <p>{{var3}}</p>
+    <p>{{var3["Hello"]}}</p>
+    <h3>FAANG in list</h3>
+    <ul>
+        {% for i in var4 %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Conditional Statement</h3>
+    {% if 'Apple' in var4 %}
+        <p>Found Apple</p>
+    {% else %}
+        <p>Not Found</p>
+    {% endif %}
+    <h3>Dictionary looping</h3>
+    <ul>
+        {% for k,v in var5.items() %}
+        <li>{{ k }} - {{ v }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

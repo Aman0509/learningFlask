@@ -1,5 +1,5 @@
 # **Learn Flask**
-### Introduction
+## Introduction
 Refer below link to start with the Flask.
 
 *Note - Please feel free to contribute and add more insightful Flask related blogs and study materials links.*
@@ -7,6 +7,12 @@ Refer below link to start with the Flask.
 - [GeeksforGeeks](https://www.geeksforgeeks.org/python-introduction-to-web-development-using-flask/)
 - [FullStackPython](https://www.fullstackpython.com/flask.html)
 - [Hello World](https://github.com/Aman0509/learningFlask/blob/main/01-Hello_World/helloWorld.py)
+
+## Templates
+- [Template basics, variables, control flow](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/1_flask_templates.py)
+- [Templates inheritance, url_for function](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/2_flask_templates.py)
+- [Templates forms](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/3_flask_templates.py)
+- [Assignment](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/assignment.py)
 
 ---
 

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        {% if passed is none %}
+            <h1>No username was entered!</h1>
+        {% elif passed %}
+            <h1>Successful!!!</h1>
+            <hr class="my-4">
+            <p class="lead">Username {{ username }} clears all the requirements</p>
+        {% else %}
+            <h1>Failed!!!</h1>
+            <hr class="my-4">
+            <p class="lead">Username {{ username }} does not clear below requirement/s</p>
+            {% for i in temp %}
+                <ul>
+                    <li>{{ i }}</li>
+                </ul>
+            {% endfor %}
+        {% endif %}
+        <p class="lead">Execution time - {{ time }}</p>
+    </div>
+</div>
+{% endblock content %}
