@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+
+            {% if mood %}
+                <p class="lead"> Your mood today is {{ mood }}</p>
+            {% else %}
+                <p class="lead"> Enter your mood below</p>
+            {% endif %}
+
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <!-- If you want to add CSS class, this is the way to go as implemented for mood -->
+                {{ form.mood.label }}&nbsp;{{ form.mood(class="form-control") }}
+                <br>
+                {{ form.submit(class="btn btn-primary") }}
+            </form>
+        </div>
+    </div>
+{% endblock content %}

@@ -14,8 +14,15 @@ Refer below link to start with the Flask.
 - [Templates forms](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/3_flask_templates.py)
 - [Assignment](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/assignment.py)
 
+## Forms
+- [Forms basics](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/1_flask_forms.py)
+- [Forms fields](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/2_flask_forms.py)
+- [Flash alerts](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/3_flask_forms.py)
+- [Assignment](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/assignment.py)
+
 ---
 
 #### Other References
 
-- [Python and Flask Bootcamp: Create Websites using Flask!](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
+- [Python and Flask Bootcamp: Create Websites using Flask! - Udemy](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
+- [Handling Forms in Flask with Flask-WTF](https://hackersandslackers.com/flask-wtforms-forms/)

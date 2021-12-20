@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class=display-4>Flask Form Demo</h1><br>
+            <form method="POST">
+                <div class="form-group">
+                    {{ form.hidden_tag() }}
+                    <fieldset>
+                        {{ form.name.label}}
+                        {{ form.name(class="form-control") }}
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        {{ form.sub.label}}&nbsp;{{ form.sub(class="form-contol") }}
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        {{ form.gender.label}}&nbsp;{{ form.gender(class="form-contol") }}
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        {{ form.relationshipStatus.label}}&nbsp;{{ form.relationshipStatus(class="form-control") }}
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        {{ form.birthDate.label}}&nbsp;{{ form.birthDate(class="form-control") }}
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        {{ form.bio.label}}&nbsp;{{ form.bio(class="form-control") }}
+                    </fieldset>
+                    <br>
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+

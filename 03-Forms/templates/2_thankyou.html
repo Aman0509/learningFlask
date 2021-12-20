@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Thank You!!!</h1>
+            <p class="lead">Here's the info filled by you:</p>
+            <ul class="form-group">
+                <li>Name - {{ session['name'] }}</li>
+                <li>Subscription Status - {{ session['sub'] }} </li>
+                <li>Gender - {{ session['gender'] }}</li>
+                <li>Relationship Status - {{ session['relation'] }}</li>
+                <li>DOB - {{ session['birthday'] }}</li>
+                <li>Bio - {{ session['bio'] }}</li>
+            </ul>
+        </div>
+    </div>
+{% endblock content %}
