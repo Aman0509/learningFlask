@@ -25,6 +25,10 @@ Refer below link to start with the Flask.
 - [Setting up the database](https://github.com/Aman0509/learningFlask/blob/main/04-Database/setup_database.py)
 - [Demonstration of CRUD operations](https://github.com/Aman0509/learningFlask/blob/main/04-Database/crud.py)
 
+## Handling DB relationship with flask
+- [Creating model for demonstrating One to One and One to Many relationship](https://github.com/Aman0509/learningFlask/blob/main/05-Flask_DB_Relationships/models.py)
+- [Performing CRUD operation on tables created based on above models](https://github.com/Aman0509/learningFlask/blob/main/05-Flask_DB_Relationships/crud.py)
+
 ---
 
 #### Other References
