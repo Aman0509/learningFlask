@@ -20,6 +20,11 @@ Refer below link to start with the Flask.
 - [Flash alerts](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/3_flask_forms.py)
 - [Assignment](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/assignment.py)
 
+## Databases with Flask
+- [Introduction to SQLAlchemy ORM, Model Creation, Flask Migrate](https://github.com/Aman0509/learningFlask/blob/main/04-Database/flask_and_database.py)
+- [Setting up the database](https://github.com/Aman0509/learningFlask/blob/main/04-Database/setup_database.py)
+- [Demonstration of CRUD operations](https://github.com/Aman0509/learningFlask/blob/main/04-Database/crud.py)
+
 ---
 
 #### Other References

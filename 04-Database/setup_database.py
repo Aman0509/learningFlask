@@ -10,6 +10,7 @@ from flask_and_database import db, Person
 db.create_all()
 
 # Once you have created the tables, you can add some data to them - Create Operation
+# gender field info is not passed deliberately in order to learn about flask migrate
 person1 = Person("John", 36)
 person2 = Person("Susan", 33)
 person3 = Person("Bob", 28)

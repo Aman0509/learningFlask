@@ -10,6 +10,7 @@ from flask_and_database import db, Person
 # Create Operation #
 ####################
 
+# gender field info is not passed deliberately in order to learn about flask migrate
 person4 = Person("Jack", 35)
 person5 = Person("Jill", 32)
 db.session.add_all([person4, person5])

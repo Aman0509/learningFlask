@@ -32,11 +32,31 @@ Models
     - Optionally provide a table name
     - Add in table columns as attributes
     - Add in methods for __init__ and __repr__
+
+Migrate
+- When creating a Model for a Database table you will sometimes need to make adjustments to the model, such as adding a new column.
+- Upon making these changes, you will need to migrate these changes in order to update the database table.
+- We can do this with Flask-Migrate
+    pip install Flask-Migrate
+- This allows us to make adjustments in our Model class, and then make sure they take effect in the SQL database.
+- Set the FLASK_APP environment Variable
+    MacOS/Linux
+        export FLASK_APP=myapp.py
+    Windows
+        set FLASK_APP=myapp.py
+- If you don’t set the flask app, then you will get an error
+    Error: Could not locate Flask application. You did not provide the FLASK_APP environment variable.
+- Make sure to check the migrations_instructions.txt file
+- Commands
+    - flask db init -> Sets up the migrations directory
+    - flask db migrate -m "some_message" -> Creates the migration file
+    - flask db upgrade -> Updates the database with the migration
 """
 
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 # This gives the absolute path where this file in which we are currently working is located
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -52,6 +72,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Create an instance of the SQLAlchemy class and passing our app into it
 db = SQLAlchemy(app)
 
+# Adding migrate to our app
+Migrate(app, db)
+
 # Creating a model class - Setting up a table in pur database
 class Person(db.Model):
 
@@ -62,10 +85,12 @@ class Person(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(128))
     age = db.Column(db.Integer)
+    gender = db.Column(db.String(120))
 
-    def __init__(self, name, age):
+    def __init__(self, name, age, gender):
         self.name = name
         self.age = age
+        self.gender = gender
     
     def __repr__(self):
-        return f"<Person: {self.name}>"
+        return f"<Person: {self.name}-{self.age}-{self.gender}>"
