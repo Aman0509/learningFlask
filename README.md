@@ -8,24 +8,24 @@ Refer below link to start with the Flask.
 - [FullStackPython](https://www.fullstackpython.com/flask.html)
 - [Hello World](https://github.com/Aman0509/learningFlask/blob/main/01-Hello_World/helloWorld.py)
 
-## Templates
+## [Templates](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/)
 - [Template basics, variables, control flow](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/1_flask_templates.py)
 - [Templates inheritance, url_for function](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/2_flask_templates.py)
 - [Templates forms](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/3_flask_templates.py)
 - [Assignment](https://github.com/Aman0509/learningFlask/blob/main/02-Templates/assignment.py)
 
-## Forms
+## [Forms](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/)
 - [Forms basics](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/1_flask_forms.py)
 - [Forms fields](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/2_flask_forms.py)
 - [Flash alerts](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/3_flask_forms.py)
 - [Assignment](https://github.com/Aman0509/learningFlask/blob/main/03-Forms/assignment.py)
 
-## Databases with Flask
+## [Databases with Flask](https://github.com/Aman0509/learningFlask/blob/main/04-Database/)
 - [Introduction to SQLAlchemy ORM, Model Creation, Flask Migrate](https://github.com/Aman0509/learningFlask/blob/main/04-Database/flask_and_database.py)
 - [Setting up the database](https://github.com/Aman0509/learningFlask/blob/main/04-Database/setup_database.py)
 - [Demonstration of CRUD operations](https://github.com/Aman0509/learningFlask/blob/main/04-Database/crud.py)
 
-## Handling DB relationship with flask
+## [Handling DB relationship with flask](https://github.com/Aman0509/learningFlask/blob/main/05-Flask_DB_Relationships/)
 - [Creating model for demonstrating One to One and One to Many relationship](https://github.com/Aman0509/learningFlask/blob/main/05-Flask_DB_Relationships/models.py)
 - [Performing CRUD operation on tables created based on above models](https://github.com/Aman0509/learningFlask/blob/main/05-Flask_DB_Relationships/crud.py)
 
