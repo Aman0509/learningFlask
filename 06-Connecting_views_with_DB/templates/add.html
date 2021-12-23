@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Add entry</h1>
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                {{ form.title.label }}
+                {{ form.title(class="form-control") }}
+                <br>
+                {{ form.content.label }}
+                {{ form.content(class="form-control") }}
+                <br>
+                {{ form.submit(class="btn btn-primary") }}
+            </form>
+        </div>
+    </div>
+{% endblock content %}
