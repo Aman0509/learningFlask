@@ -33,6 +33,106 @@ Refer below link to start with the Flask.
 - [Views and Models](https://github.com/Aman0509/learningFlask/blob/main/06-Connecting_views_with_DB/app.py)
 - [Forms](https://github.com/Aman0509/learningFlask/blob/main/06-Connecting_views_with_DB/forms.py)
 
+## Large Flask Applications
+- For larger Flask applications, it makes more sense to separate portions of the application into their own files (models.py, forms.py, views.py)
+- Forms, Views, Templates for each major component.
+
+![image appflowchart](https://github.com/Aman0509/learningFlask/blob/main/others/flask_app_flow.png)
+
+- We’ll be able to use the blueprints library to connect these separate modular components to our main app.py file.
+- Flask has a built-in blueprints capability which will allow us to register modular components for our Flask App.
+- This way we can easily reference a view for each component.
+- Keep in mind, we’re still keeping app.py, it will just be referencing these sub-components.
+- Below is the sample flask directory structure.
+- For example, we’ll have 2 views.py files, one for 'owners' and one for 'puppies'.
+- Each of these views.py will have their own add view.
+- In order for our Flask application to not get confused for a /add route, we use blueprints
+- The blueprints will register a url_prefix for each views.py file.
+    - /owners/add
+    - /puppies/add
+
+Fig 1: Flask Project Structure
+```
+./testproject
+├── app.py
+├── requirements.txt
+└── testproject
+    ├── __init__.py
+    ├── app1
+    │   ├── forms.py
+    │   ├── templates
+    │   │   └── app1
+    │   └── views.py
+    ├── app2
+    │   ├── forms.py
+    │   ├── templates
+    │   │   └── app2
+    │   └── views.py
+    ├── models.py
+    ├── static
+    └── templates
+        ├── base.html
+        └── home.html
+```
+
+---
+
+## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
+
+This script will create the flask project with all the apps/components information.
+
+### Usage
+
+```
+usage: startproject.py [-h] [-p TARGETPATH] projectname
+
+Create a new Flask project.
+
+positional arguments:
+  projectname           The name of the project to create.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p TARGETPATH, --targetpath TARGETPATH
+                        Path to the directory where the project will be created.
+```
+&nbsp;
+
+**Use case 1:** By running this script like below, 'testproject' dir will be created which have structure as shown in Fig 1.
+
+```
+user@laptop % pwd
+/home
+user@laptop % python startproject.py testproject
+user@laptop % ls
+testproject
+```
+&nbsp;
+
+**Use case 2:** By running this script like below, sub project dir name (where all flask apps/component will live) will be same as pwd directory name.
+
+```
+user@laptop % pwd
+/home/testproject
+user@laptop % python startproject.py .
+user@laptop % ls
+app.py			requirements.txt	testproject
+```
+&nbsp;
+
+**Use case 3:** By running this script like below, flask project will be created at the given target path.
+
+```
+user@laptop % pwd
+/home
+user@laptop % python startproject.py testproject -p /opt/temp
+user@laptop % ls /opt/temp
+testproject
+```
+&nbsp;
+
+***Note - Please contribute for features and enhancements.***
+
 ---
 
 #### Other References
