@@ -5,8 +5,11 @@
         <div class="container">
             <h1 class="display-4">Welcome</h1>
             <ul>
+                <li><a href="{{ url_for('adduser') }}">Add User</a></li>
                 <li><a href="{{ url_for('add') }}">Add Entry</a></li>
+                <li><a href="{{ url_for('listusers') }}">List Users</a></li>
                 <li><a href="{{ url_for('list') }}">List Entries</a></li>
+                <li><a href="{{ url_for('deleteuser') }}">Delete User</a></li>
                 <li><a href="{{ url_for('delete') }}">Delete Entry</a></li>
             </ul>
         </div>

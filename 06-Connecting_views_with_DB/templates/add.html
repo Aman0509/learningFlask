@@ -7,6 +7,9 @@
             <h1 class="display-4">Add entry</h1>
             <form method="POST">
                 {{ form.hidden_tag() }}
+                {{ form.userid.label}}
+                {{ form.userid(class="form-control")}}
+                <br>
                 {{ form.title.label }}
                 {{ form.title(class="form-control") }}
                 <br>

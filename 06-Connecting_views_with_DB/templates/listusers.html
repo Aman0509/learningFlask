@@ -4,26 +4,20 @@
 {% block content %}
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            {% if entries %}
-                <h1 class="display-4">Your Journel Entries</h1><br>
+            {% if userslist %}
+                <h1 class="display-4">Users List</h1><br>
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">User</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Content</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for entry in entries %}
+                        {% for user in userslist %}
                             <tr>
-                                <th scope="row">{{ entry.id }}</th>
-                                <td>{{ entry.userid }}</td>
-                                <td>{{ entry.date }}</td>
-                                <td>{{ entry.title }}</td>
-                                <td>{{ entry.content }}</td>
+                                <th scope="row">{{ user.id }}</th>
+                                <td>{{ user.username }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
