@@ -75,6 +75,10 @@ Fig 1: Flask Project Structure
         └── home.html
 ```
 
+## [User Authentication](https://github.com/Aman0509/learningFlask/blob/main/07-User_Authentication/)
+- [Hashing Library](https://github.com/Aman0509/learningFlask/blob/main/07-User_Authentication/password_hashing.py)
+- [Authentication Demo](https://github.com/Aman0509/learningFlask/tree/main/07-User_Authentication/flask_login_demo/)
+
 ---
 
 ## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
@@ -135,7 +139,7 @@ testproject
 
 ---
 
-#### Other References
+### References
 
 - [Python and Flask Bootcamp: Create Websites using Flask! - Udemy](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
 - [Handling Forms in Flask with Flask-WTF](https://hackersandslackers.com/flask-wtforms-forms/)
