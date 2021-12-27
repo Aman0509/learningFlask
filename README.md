@@ -79,6 +79,8 @@ Fig 1: Flask Project Structure
 - [Hashing Library](https://github.com/Aman0509/learningFlask/blob/main/07-User_Authentication/password_hashing.py)
 - [Authentication Demo](https://github.com/Aman0509/learningFlask/tree/main/07-User_Authentication/flask_login_demo/)
 
+## [OAuth Login with Flask-Dance](https://github.com/Aman0509/learningFlask/tree/main/08-OAuth)
+
 ---
 
 ## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
@@ -143,3 +145,6 @@ testproject
 
 - [Python and Flask Bootcamp: Create Websites using Flask! - Udemy](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
 - [Handling Forms in Flask with Flask-WTF](https://hackersandslackers.com/flask-wtforms-forms/)
+- Implement OAuth2.0 Login for Flask app
+  - [atrium.ai](https://atrium.ai/resources/how-to-implement-oauth-2-0-login-for-python-flask-web-server-applications/)
+  - [toptal.com](https://www.toptal.com/flask/flask-login-tutorial-sso)
