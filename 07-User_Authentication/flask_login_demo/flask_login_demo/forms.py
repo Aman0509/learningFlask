@@ -18,6 +18,9 @@ class RegistrationForm(FlaskForm):
     pass_confirm = PasswordField('Confirm Password', validators=[DataRequired()])
     submit = SubmitField('Register')
 
+    # Check how custom validators works
+    # https://wtforms.readthedocs.io/en/2.3.x/validators/#custom-validators
+    # https://wtforms.readthedocs.io/en/2.3.x/forms/#inline-validators
     def validate_email(self, field):
         if User.query.filter_by(email=self.email.data).first():
             raise ValidationError('Your email has been registered already')
