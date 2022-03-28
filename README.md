@@ -81,6 +81,8 @@ Fig 1: Flask Project Structure
 
 ## [OAuth Login with Flask-Dance](https://github.com/Aman0509/learningFlask/tree/main/08-OAuth)
 
+## [Sample Project - Blog Website](https://github.com/Aman0509/learningFlask/tree/main/09-Building_Blog_Website)
+
 ---
 
 ## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
@@ -148,3 +150,4 @@ testproject
 - Implement OAuth2.0 Login for Flask app
   - [atrium.ai](https://atrium.ai/resources/how-to-implement-oauth-2-0-login-for-python-flask-web-server-applications/)
   - [toptal.com](https://www.toptal.com/flask/flask-login-tutorial-sso)
+- [What is enctype="multipart/form-data" mean?](https://stackoverflow.com/questions/4526273/what-does-enctype-multipart-form-data-mean#:~:text=enctype(ENCode%20TYPE)%20attribute%20specifies,parts%20and%20send%20to%20server.)

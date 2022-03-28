@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            {% if current_user.is_authenticated  %}
+                <h1 class="display-4"> Welcome {{ current_user }} </h1>
+            {% else %}
+                <h1 class="display-4">Blogging Website</h1>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        {% for post in blog_posts.items %}
+            <div class="card">
+                <div class="card-body">
+                    <h2>
+                        <a class='card-title' href="{{ url_for('blogs.blog_post', blog_post_id=post.id) }}">{{ post.title }}</a>
+                    </h2>
+                    <a href="{{ url_for('users.user_posts',username=post.author.username) }}">Written By: {{ post.author.username }}</a>
+                    <p>Published on: {{post.date.strftime('%Y-%m-%d')}}</p>
+                    <a class="btn btn-primary" href="{{ url_for('blogs.blog_post',blog_post_id=post.id) }}">Read Blog Post</a>
+                </div>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            {% for page_num in blog_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2)  %}
+                {% if blog_posts.page == page_num %}
+                    <li class="page-item disabled">
+                        <a href="{{ url_for('home.index', page=page_num) }}" class="page-link">{{ page_num }}</a>
+                    </li>
+
+                {% else %}
+                    <li class="page-item">
+                        <a href="{{ url_for('home.index', page=page_num) }}" class="page-link">{{ page_num }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+{% endblock content %}
