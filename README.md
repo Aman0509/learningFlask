@@ -91,6 +91,10 @@ Fig 1: Flask Project Structure
   
 ---
 
+&nbsp;
+
+# Script for creating Flask projet structure
+
 ## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
 
 This script will create the flask project with all the apps/components information.
