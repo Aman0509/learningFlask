@@ -83,6 +83,12 @@ Fig 1: Flask Project Structure
 
 ## [Sample Project - Blog Website](https://github.com/Aman0509/learningFlask/tree/main/09-Building_Blog_Website)
 
+## [Creating RESTful APIs using Flask](https://github.com/Aman0509/learningFlask/tree/main/10-Flask_RestAPIs)
+- [Course_1_by_Jose_Portilla](https://github.com/Aman0509/learningFlask/tree/main/10-Flask_RestAPIs/Course_1_by_Jose_Portilla)
+  * [Basic_API_Example](https://github.com/Aman0509/learningFlask/tree/main/10-Flask_RestAPIs/Course_1_by_Jose_Portilla/Basic_API_Example/basic_example.py)
+  * [CRUD_and_JWT_Example_without_DB](https://github.com/Aman0509/learningFlask/tree/main/10-Flask_RestAPIs/Course_1_by_Jose_Portilla/CRUD_and_JWT_basics/crud_and_jwt_basics.py)
+  * [CRUD_and_JWT_Example_with_DB](https://github.com/Aman0509/learningFlask/tree/main/10-Flask_RestAPIs/Course_1_by_Jose_Portilla/Flask_API_with_DB/crud_and_jwt_basics.py)
+  
 ---
 
 ## [startproject.py](https://github.com/Aman0509/learningFlask/blob/main/startproject.py)
